@@ -29,9 +29,21 @@
           <p class="products-list-item-label">Indulge in our rich and creamy ice cream, handcrafted with all-natural
             ingredients and available in a variety of
             flavors.</p>
-          <button class="products-list-item-button">
-            <img class="button-image" src="/images/arrow-button.jpg" alt="more button" width="40px">
+          <button class="products-list-item-button" id="icecream-toggleButton">
+            <img class="button-image" id="icecream-buttonImage" src="/images/right-arrow-button.jpg" alt="more button"
+              width="40px">
           </button>
+          <div class="products-list-item-additional retracted icecream-menu" id="icecream-content">
+            <h2 class="products-list-item-header best-seller">Best Seller</h2>
+            <img class="products-list-item-ellipsis" src="/images/ellipsis.svg" alt="ellipsis" width="26px">
+            <ul class="products-list-item-menu-list">
+              <li class="products-list-item-menu-list-item">Vanilla Delight</li>
+              <li class="products-list-item-menu-list-item">Chocolate Fudge Bliss</li>
+              <li class="products-list-item-menu-list-item">Strawberry Forever</li>
+              <li class="products-list-item-menu-list-item">Mint Chocolate Chip</li>
+              <li class="products-list-item-menu-list-item">Rocky Road Avalanche</li>
+            </ul>
+          </div>
         </div>
       </li>
       <li class="products-list-item">
@@ -40,9 +52,21 @@
           <img class="products-list-item-ellipsis" src="/images/ellipsis.svg" alt="ellipsis" width="26px">
           <p class="products-list-item-label">Refresh and energize with our perfectly brewed iced coffee, made with
             high-quality beans and served over ice.</p>
-          <button class="products-list-item-button">
-            <img class="button-image" src="/images/arrow-button.jpg" alt="more button" width="40px">
+          <button class="products-list-item-button" id="icecoffee-toggleButton">
+            <img class=" button-image" id="icecoffee-buttonImage" src="/images/right-arrow-button.jpg" alt="more button"
+              width="40px">
           </button>
+          <div class="products-list-item-additional retracted icecoffee-menu" id="icecoffee-content">
+            <h2 class="products-list-item-header best-seller">Best Seller</h2>
+            <img class="products-list-item-ellipsis" src="/images/ellipsis.svg" alt="ellipsis" width="26px">
+            <ul class="products-list-item-menu-list">
+              <li class="products-list-item-menu-list-item">Classic Iced Coffee</li>
+              <li class="products-list-item-menu-list-item">Caramel Macchiato</li>
+              <li class="products-list-item-menu-list-item">Mocha Frappuccino</li>
+              <li class="products-list-item-menu-list-item">Vanilla Iced Latte</li>
+              <li class="products-list-item-menu-list-item">Hazelnut Cold Brew</li>
+            </ul>
+          </div>
         </div>
       </li>
       <li class="products-list-item">
@@ -53,13 +77,28 @@
             topped
             with whipped cream and your favorite
             toppings.</p>
-          <button class="products-list-item-button">
-            <img class="button-image" src="/images/arrow-button.jpg" alt="more button" width="40px">
+          <button class="products-list-item-button" id="milkshake-toggleButton">
+            <img class=" button-image" id="milkshake-buttonImage" src="/images/right-arrow-button.jpg" alt="more button"
+              width="40px">
           </button>
+          <div class="products-list-item-additional retracted milkshake-menu" id="milkshake-content">
+            <h2 class="products-list-item-header best-seller">Best Seller</h2>
+            <img class="products-list-item-ellipsis" src="/images/ellipsis.svg" alt="ellipsis" width="26px">
+            <ul class="products-list-item-menu-list">
+              <li class="products-list-item-menu-list-item">Classic Vanilla Milkshake</li>
+              <li class="products-list-item-menu-list-item">Chocolate Lover's Shake</li>
+              <li class="products-list-item-menu-list-item">Strawberry Fields Shake</li>
+              <li class="products-list-item-menu-list-item">Cookies 'n' Cream Delight</li>
+              <li class="products-list-item-menu-list-item">Caramel Crunch Shake</li>
+            </ul>
+          </div>
         </div>
       </li>
     </ul>
   </section>
+  <script src="/js/icecream-button.js"></script>
+  <script src="/js/icecoffee-button.js"></script>
+  <script src="/js/milkshake-button.js"></script>
 </body>
 
 </html>

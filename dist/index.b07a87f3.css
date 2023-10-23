@@ -1,0 +1,763 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  tab-size: 4;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp, pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+.example {
+  color: #2f2f37;
+  max-width: 960px;
+  background-color: #fff;
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5;
+}
+
+.example code {
+  color: #fff;
+  background-color: #ff6b0a;
+  border-radius: 2px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("logo.c493797d.png");
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.products-container {
+  margin: auto;
+  padding: 60px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .products-container {
+    padding: 60px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-container {
+    padding: 60px 16px;
+  }
+}
+
+.products-label {
+  color: #ffa5ba;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: Titan One, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .products-label {
+    padding-bottom: 18px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-label {
+    letter-spacing: 1.2px;
+    padding-bottom: 16px;
+    font-size: 30px;
+  }
+}
+
+.products-header {
+  color: #d41443;
+  text-align: center;
+  letter-spacing: 1.36px;
+  font-family: Titan One, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .products-header {
+    letter-spacing: 1.92px;
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-header {
+    letter-spacing: 3.48px;
+    font-size: 58px;
+  }
+}
+
+.products-list {
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list {
+    gap: 32px;
+  }
+}
+
+.products-list-item {
+  padding-top: 148px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list-item {
+    padding-top: 158px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list-item {
+    padding-top: 281px;
+  }
+}
+
+.products-list-item-description {
+  width: 280px;
+  border-radius: 24px;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 32px;
+  padding: 160px 32px 40px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list-item-description {
+    width: 224px;
+    padding: 118px 18px 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list-item-description {
+    width: 368px;
+    padding: 165px 32px 60px;
+  }
+}
+
+.icecream-card {
+  background: #ffb8ca;
+}
+
+.icecream-card:before {
+  content: url("ice-cream-mobile.08bf61ea.png");
+  position: absolute;
+  top: 8px;
+}
+
+.icecoffee-card {
+  background: #f0d1a5;
+}
+
+.icecoffee-card:before {
+  content: url("ice-coffee-mobile.15afcd0d.png");
+  position: absolute;
+  top: 8px;
+}
+
+.milkshake-card {
+  background: #c2e297;
+}
+
+.milkshake-card:before {
+  content: url("milkshake-mobile.5183ce58.png");
+  position: absolute;
+  top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .icecream-card:before {
+    content: url("ice-cream-tablet.b8fcd2ac.png");
+    top: 20px;
+  }
+
+  .icecoffee-card:before {
+    content: url("ice-coffee-tablet.e652f096.png");
+    top: 20px;
+  }
+
+  .milkshake-card:before {
+    content: url("milkshake-tablet.ccd86789.png");
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .icecream-card:before {
+    content: url("ice-cream.af976953.png");
+    top: 20px;
+  }
+
+  .icecoffee-card:before {
+    content: url("ice-coffee.e25621dd.png");
+    top: 20px;
+  }
+
+  .milkshake-card:before {
+    content: url("milkshake.1effd043.png");
+    top: 20px;
+  }
+}
+
+.products-list-item-header {
+  color: #fff;
+  text-align: center;
+  letter-spacing: .8px;
+  font-family: Titan One, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list-item-header {
+    letter-spacing: 1.2px;
+    font-size: 30px;
+  }
+}
+
+.products-list-item-label {
+  color: #fff;
+  text-align: center;
+  letter-spacing: .56px;
+  height: 124px;
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 152%;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list-item-label {
+    height: 150px;
+    line-height: 176%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list-item-label {
+    height: 134px;
+    letter-spacing: .64px;
+    font-size: 16px;
+  }
+}
+
+.products-list-item-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.products-list-item-button:hover {
+  border: 1px solid #d41342;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  background-image: linear-gradient(#fff 25%, #fff5f6 25% 70%);
+  padding: 60px 0 40px;
+}
+
+.container {
+  max-width: 425px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact__content {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 32px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+.contact__card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px 32px;
+  box-shadow: 0 8px 30px #d414431a;
+}
+
+.contact__info {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 24px;
+}
+
+.contact__h3 {
+  width: 80px;
+  height: 16px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .48px;
+  width: 80px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  display: flex;
+}
+
+.foodtruck {
+  width: 130px;
+  height: 16px;
+  background: #c2e297;
+  flex-shrink: 0;
+}
+
+.contact__h4 {
+  color: #000;
+  letter-spacing: .48px;
+  margin-bottom: 8px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+}
+
+.contact__p {
+  color: #907e82;
+  letter-spacing: .48px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.shop-hours {
+  border-bottom: 1px solid #e1e1e1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 0;
+  list-style: none;
+  display: flex;
+}
+
+.shop-hours__day {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+}
+
+.shop-hours__time {
+  color: #ffa5ba;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+}
+
+.contact__address {
+  padding-top: 24px;
+  list-style: none;
+}
+
+.contact__address-link {
+  color: #907e82;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.contact__address-link:hover {
+  color: #d41443;
+}
+
+.contact__button {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 14px;
+  list-style: none;
+  display: flex;
+}
+
+.contact__button-title {
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
+  color: #fff;
+  text-align: center;
+  background: #d41342;
+  border: none;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+}
+
+.contact__button-title:hover {
+  background: #c91340;
+}
+
+.contact__button-icon {
+  width: 5.61px;
+  height: 16px;
+  fill: #fff;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+
+.franchise-button {
+  color: #d41443;
+  background: #fff;
+}
+
+.franchise-icon {
+  fill: #d41443;
+}
+
+.franchise-button:hover {
+  background: #ecebeb;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
+  .contact {
+    background-image: linear-gradient(#fff 50%, #fff5f6 50%);
+    padding: 80px 0 40px;
+  }
+
+  .contact__card {
+    width: 224px;
+    height: 528px;
+    flex-shrink: 0;
+    padding-right: 16px;
+  }
+
+  .contact__info {
+    padding-bottom: 32px;
+  }
+
+  .contact__h3 {
+    width: 75.103px;
+    height: 28px;
+    letter-spacing: .64px;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .foodtruck {
+    width: 138px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .contact__h4 {
+    letter-spacing: .56px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .contact__p {
+    letter-spacing: .56px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 166%;
+  }
+
+  .shop-hours {
+    padding: 32px 0;
+  }
+
+  .shop-hours__day, .shop-hours__time {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .contact__address-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 183%;
+  }
+
+  .contact__button-title {
+    width: 191.45px;
+    height: 44px;
+    column-gap: 14px;
+  }
+
+  .franchise-button {
+    width: 174.046px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    min-width: 1158px;
+  }
+
+  .contact {
+    background-image: linear-gradient(#fff 30%, #fff5f6 30% 70%);
+    padding: 120px 0;
+  }
+
+  .contact__content {
+    flex-wrap: nowrap;
+  }
+
+  .contact__card {
+    width: 368px;
+    height: 538px;
+    flex-shrink: 0;
+  }
+
+  .contact__info {
+    padding-bottom: 32px;
+  }
+
+  .contact__h3 {
+    width: 75.103px;
+    height: 28px;
+    letter-spacing: .64px;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .foodtruck {
+    width: 138px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .contact__h4 {
+    letter-spacing: .64px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .contact__p {
+    letter-spacing: .64px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 183%;
+  }
+
+  .shop-hours {
+    padding: 32px 0;
+  }
+
+  .shop-hours__day {
+    letter-spacing: .64px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .shop-hours__time {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+  }
+
+  .contact__address-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 183%;
+  }
+
+  .contact__button-title {
+    width: 198px;
+  }
+
+  .franchise-button {
+    width: 168px;
+  }
+}
+
+/*# sourceMappingURL=index.b07a87f3.css.map */

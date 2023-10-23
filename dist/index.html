@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <link rel="stylesheet" href="/index.b07a87f3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <article class="example" id="uk">
+  <h1>HTML-partials Hello Team 5</h1>
+
+  <!--
+    ❗️❗️❗️ The path to images from the HTML partial
+    is the same as from the index.html file
+  -->
+  <img src="/logo.c493797d.png" alt="" width="320">
+
+  <p>
+    The
+    <a href="https://github.com/posthtml/posthtml-include" target="_blank" rel="noopener noreferrer">
+      posthtml-include
+    </a>
+    plugin allows you to add code from other HTML files (fragments) to HTML page
+    files. Fragments are stored in the <code>src/partials</code> folder. The
+    addition occurs when compiling page files, such as <code>index.html</code>.
+  </p>
+
+  <p>
+    This <code>example.html</code> file is an example of such a snippet, with
+    the markup of a certain part of the main page. This is very convenient for
+    team development on student projects, when several people write in one HTML
+    file at once.
+  </p>
+
+  <p>
+    The syntax for adding a fragment to the main file is:
+    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
+  </p>
+
+  <div class="background"></div>
+</article>
+
+  <section class="products-container">
+  <p class="products-label">100% NATURAL</p>
+  <h1 class="products-header">PRODUCTS</h1>
+  <ul class="products-list">
+    <li class="products-list-item">
+      <div class="products-list-item-description icecream-card">
+        <h2 class="products-list-item-header">ICE CREAM</h2>
+        <img class="products-list-item-ellipsis" src="/ellipsis.679b2812.svg" alt="ellipsis" width="26px">
+        <p class="products-list-item-label">Indulge in our rich and creamy ice cream, handcrafted with all-natural
+          ingredients and available in a variety of
+          flavors.</p>
+        <button class="products-list-item-button">
+          <img class="button-image" src="/arrow-button.4679f41b.jpg" alt="more button" width="40px">
+        </button>
+      </div>
+    </li>
+    <li class="products-list-item">
+      <div class="products-list-item-description icecoffee-card">
+        <h2 class="products-list-item-header">ICE COFFEE</h2>
+        <img class="products-list-item-ellipsis" src="/ellipsis.679b2812.svg" alt="ellipsis" width="26px">
+        <p class="products-list-item-label">Refresh and energize with our perfectly brewed iced coffee, made with
+          high-quality beans and served over ice.</p>
+        <button class="products-list-item-button">
+          <img class="button-image" src="/arrow-button.4679f41b.jpg" alt="more button" width="40px">
+        </button>
+      </div>
+    </li>
+    <li class="products-list-item">
+      <div class="products-list-item-description milkshake-card">
+        <h2 class="products-list-item-header">MILKSHAKES</h2>
+        <img class="products-list-item-ellipsis" src="/ellipsis.679b2812.svg" alt="ellipsis" width="26px">
+        <p class="products-list-item-label">Satisfy your sweet tooth with our thick, made with premium ice cream,
+          topped
+          with whipped cream and your favorite
+          toppings.</p>
+        <button class="products-list-item-button">
+          <img class="button-image" src="/arrow-button.4679f41b.jpg" alt="more button" width="40px">
+        </button>
+      </div>
+    </li>
+  </ul>
+</section>
+  <section class="contact">
+  <div class="container">
+    <h2 hidden=""></h2>
+    <div class="contact__content">
+      <div class="contact__card">
+        <div class="contact__info">
+          <h3 class="contact__h3">cafe</h3>
+          <h4 class="contact__h4">Chicago</h4>
+          <p class="contact__p">
+            Handcrafted coffee, baked goods, and premium ice cream.
+          </p>
+        </div>
+        <ul class="shop-hours">
+          <li class="shop-hours__content">
+            <h4 class="shop-hours__day">Monday - Friday</h4>
+            <p class="shop-hours__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="shop-hours__content">
+            <h4 class="shop-hours__day">Saturday - Sunday</h4>
+            <p class="shop-hours__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contact__address">
+          <li class="contact__address-tel">
+            <a class="contact__address-link" href="tel:610383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="contact__address-mail">
+            <a class="contact__address-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact__card">
+        <div class="contact__info">
+          <h3 class="contact__h3 foodtruck">foodtruck</h3>
+          <h4 class="contact__h4">Los Angeles</h4>
+          <p class="contact__p">
+            Fusion cuisine and refreshing ice cream made with passion.
+          </p>
+        </div>
+        <ul class="shop-hours">
+          <li class="shop-hours__content">
+            <h4 class="shop-hours__day">Monday - Friday</h4>
+            <p class="shop-hours__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="shop-hours__content">
+            <h4 class="shop-hours__day">Saturday - Sunday</h4>
+            <p class="shop-hours__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contact__address">
+          <li class="contact__address-tel">
+            <a class="contact__address-link" href="tel:610383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="contact__address-mail">
+            <a class="contact__address-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact__card">
+        <div class="contact__info">
+          <h3 class="contact__h3">cafe</h3>
+          <h4 class="contact__h4">New York</h4>
+          <p class="contact__p">
+            Specialty teas, artisanal pastries, mouth-watering ice cream.
+          </p>
+        </div>
+        <ul class="shop-hours">
+          <li class="shop-hours__content">
+            <h4 class="shop-hours__day">Monday - Friday</h4>
+            <p class="shop-hours__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="shop-hours__content">
+            <h4 class="shop-hours__day">Saturday - Sunday</h4>
+            <p class="shop-hours__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contact__address">
+          <li class="contact__address-tel">
+            <a class="contact__address-link" href="tel:610383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="contact__address-mail">
+            <a class="contact__address-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="contact__button">
+      <li class="contact__button-content">
+        <button class="contact__button-title">
+          Our Locations
+          <svg class="contact__button-icon">
+            <use href="/icon.2044fb38.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contact__button-content">
+        <button class="contact__button-title franchise-button">
+          Franchise
+          <svg class="contact__button-icon franchise-icon">
+            <use href="/icon.2044fb38.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<script src="/project-team5.59712999.js"></script></body>
+
+</html>

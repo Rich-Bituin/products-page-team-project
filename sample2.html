@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Container</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 300px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+
+    .button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .content {
+      background-color: #f2f2f2;
+      padding: 20px;
+      transition: transform 0.5s;
+    }
+
+    .opened {
+      transform: translateX(0);
+    }
+
+    .retracted {
+      transform: translateX(-100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="button" id="toggleButton">Toggle Details</div>
+    <div class="content retracted" id="content">
+      <h2>Additional Details</h2>
+      <p>This is the content that appears when you click the button.</p>
+    </div>
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    const content = document.getElementById('content');
+    let isOpen = false;
+
+    toggleButton.addEventListener('click', () => {
+      if (isOpen) {
+        content.classList.remove('opened');
+        content.classList.add('retracted');
+        toggleButton.innerText = ' ';
+      } else {
+        content.classList.remove('retracted');
+        content.classList.add('opened');
+        toggleButton.innerText = ' ';
+      }
+      isOpen = !isOpen;
+    });
+  </script>
+</body>
+
+</html>

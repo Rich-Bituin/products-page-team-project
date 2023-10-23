@@ -95,6 +95,7 @@ ul {
 .products-list-item {
   padding-top: 148px;
   position: relative;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding-top: 158px;
@@ -105,7 +106,8 @@ ul {
   }
 }
 
-.products-list-item-description {
+.products-list-item-description,
+.products-list-item-additional {
   /* border  */
   width: 280px;
   border-radius: 24px;
@@ -136,6 +138,7 @@ ul {
   content: url(/images/ice-cream-mobile.png);
   position: absolute;
   top: 8px;
+  z-index: 2;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -152,6 +155,7 @@ ul {
   content: url(/images/ice-coffee-mobile.png);
   position: absolute;
   top: 8px;
+  z-index: 2;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -168,6 +172,7 @@ ul {
   content: url(/images/milkshake-mobile.png);
   position: absolute;
   top: 8px;
+  z-index: 2;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -263,7 +268,8 @@ ul {
   }
 }
 
-.products-list-item-label {
+.products-list-item-label,
+.products-list-item-menu-list {
   /* text style  */
   color: #fff;
   text-align: center;
@@ -287,6 +293,10 @@ ul {
   }
 }
 
+.products-list-item-menu-list {
+  list-style: none;
+}
+
 .products-list-item-button {
   border: none;
   border-radius: 50px;
@@ -294,6 +304,7 @@ ul {
   height: 40px;
   overflow: hidden;
   cursor: pointer;
+  z-index: 2;
 
   display: flex;
   justify-content: center;
@@ -301,4 +312,53 @@ ul {
 
 .products-list-item-button:hover {
   border: 1px solid #d41342;
+}
+
+.products-list-item-additional {
+  position: absolute;
+  width: 100%;
+  height: 489px;
+  transition: transform 0.5s;
+  bottom: 0px;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    height: 473px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 535px;
+  }
+}
+
+.opened {
+  transform: translateX(0);
+}
+
+.retracted {
+  transform: translateX(-100%);
+}
+
+.best-seller::before {
+  content: '\2605';
+  position: relative;
+  right: 10px;
+}
+
+.best-seller::after {
+  content: '\2605';
+  position: relative;
+  left: 10px;
+}
+
+.icecream-menu {
+  background: #dd5965;
+}
+
+.icecoffee-menu {
+  background: #ba987a;
+}
+
+.milkshake-menu {
+  background: #92c955;
 }
